@@ -5,16 +5,16 @@ metadata:
 spec:
   selector:
     matchLabels:
-      app.kubernetes.io/name: attendance-checker-fe
+      app.kubernetes.io/name: attendance-checker-fe-prod
   replicas: 1
   template:
     metadata:
       labels:
-        app.kubernetes.io/name: attendance-checker-fe
+        app.kubernetes.io/name: attendance-checker-fe-prod
     spec:
       containers:
-      - image: scgskku/attendance-checker-fe-dev
+      - image: scgskku/attendance-checker-fe-prod
         imagePullPolicy: Always
-        name: attendance-checker-fe
+        name: attendance-checker-fe-prod
         ports:
         - containerPort: 3000
