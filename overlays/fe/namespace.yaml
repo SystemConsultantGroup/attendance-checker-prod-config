@@ -1,4 +1,4 @@
 apiVersion: v1
 kind: Namespace
 metadata:
-  name: attendance-checker-fe
+  name: attendance-checker-fe-prod
