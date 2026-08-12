@@ -1,6 +1,6 @@
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
-namespace: attendance-checker-fe
+namespace: attendance-checker-fe-prod
 resources:
 - namespace.yaml
 - ../../base/fe
@@ -12,5 +12,5 @@ patches:
     kind: Ingress
     name: attendance-checker-fe-ingress
 images:
-- name: scgskku/attendance-checker-fe-dev
+- name: scgskku/attendance-checker-fe-prod
   newTag: 13b453f8b39cc57b2d10d7e7eb52b068fdf3e85d-30982199892-1
