@@ -16,6 +16,6 @@ spec:
             pathType: Prefix
             backend:
               service:
-                name: attendance-checker-fe-service
+                name: attendance-checker-fe-prod-service
                 port:
                   number: 80
