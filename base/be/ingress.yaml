@@ -20,6 +20,6 @@ spec:
             pathType: Prefix
             backend:
               service:
-                name: attendance-checker-be-service
+                name: attendance-checker-be-prod-service
                 port:
                   number: 80
