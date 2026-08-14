@@ -6,14 +6,14 @@ metadata:
     kubernetes.io/ingress.class: "nginx"
     cert-manager.io/cluster-issuer: "letsencrypt-clusterissuer"
     nginx.ingress.kubernetes.io/enable-cors: "true"
-    nginx.ingress.kubernetes.io/cors-allow-origin: "https://attendance.scg.skku.ac.kr"
+    nginx.ingress.kubernetes.io/cors-allow-origin: "https://api.taghedge.scg.skku.ac.kr"
 spec:
   tls:
     - hosts:
-        - api.attendance.scg.skku.ac.kr
+        - api.taghedge.scg.skku.ac.kr
       secretName: gitops-tls
   rules:
-    - host: api.attendance.scg.skku.ac.kr
+    - host: api.taghedge.scg.skku.ac.kr
       http:
         paths:
           - path: /
