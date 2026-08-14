@@ -11,7 +11,7 @@ patches:
 - path: domain.yaml
   target:
     kind: Ingress
-    name: attendance-checker-be-ingress
+    name: attendance-checker-be-prod-ingress
 images:
 - name: scgskku/attendance-checker-be-prod
   newTag: 95a1e45372460fa64374820bf6b000b8c22e2f58-31782763586-1
