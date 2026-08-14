@@ -3,15 +3,15 @@ kind: Ingress
 metadata:
   name: attendance-checker-be-ingress
   annotations:
-    nginx.ingress.kubernetes.io/cors-allow-origin: "https://attendance.scg.skku.ac.kr"
+    nginx.ingress.kubernetes.io/cors-allow-origin: "https://taghedge.scg.skku.ac.kr"
 spec:
   $patch: replace
   tls:
     - hosts:
-        - api.attendance.scg.skku.ac.kr
+        - api.taghedge.scg.skku.ac.kr
       secretName: gitops-tls
   rules:
-    - host: api.attendance.scg.skku.ac.kr
+    - host: api.taghedge.scg.skku.ac.kr
       http:
         paths:
           - path: /v1/(.*)
