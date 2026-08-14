@@ -6,10 +6,10 @@ spec:
   $patch: replace
   tls:
     - hosts:
-        - attendance.scg.skku.ac.kr
+        - taghedge.scg.skku.ac.kr
       secretName: gitops-tls
   rules:
-    - host: attendance.scg.skku.ac.kr
+    - host: taghedge.scg.skku.ac.kr
       http:
         paths: 
           - path: /
