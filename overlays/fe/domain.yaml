@@ -1,7 +1,7 @@
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
-  name: attendance-checker-fe-ingress
+  name: attendance-checker-fe-prod-ingress
 spec:
   $patch: replace
   tls:
