@@ -6,7 +6,7 @@ metadata:
     kubernetes.io/ingress.class: "nginx"
     cert-manager.io/cluster-issuer: "letsencrypt-clusterissuer"
     nginx.ingress.kubernetes.io/enable-cors: "true"
-    nginx.ingress.kubernetes.io/cors-allow-origin: "https://api.taghedge.scg.skku.ac.kr"
+    nginx.ingress.kubernetes.io/cors-allow-origin: "https://taghedge.scg.skku.ac.kr"
 spec:
   tls:
     - hosts:
