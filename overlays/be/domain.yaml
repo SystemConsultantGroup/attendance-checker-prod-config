@@ -14,7 +14,7 @@ spec:
     - host: api.taghedge.scg.skku.ac.kr
       http:
         paths:
-          - path: /v1/(.*)
+          - path: /
             pathType: ImplementationSpecific
             backend:
               service:
